@@ -3,6 +3,6 @@ import responsiveHOC from 'react-lines-ellipsis/lib/responsiveHOC'
 
 const ResponsiveEllipsis = responsiveHOC()(LinesEllipsis)
 
-export default ({ children }: { children: string }) => {
-  return <ResponsiveEllipsis text={children} />
-}
+export default ({ children }: { children: string }) => (
+  <ResponsiveEllipsis text={children} />
+)

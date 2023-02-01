@@ -23,11 +23,9 @@ export default memo((filter: PageInterface) => {
 
   return (
     <section className="h-full w-full grid grid-cols-4 gap-10">
-      {data?.characters.results.map((character, index) => {
-        return (
-          <Card key={`character-${index}`} character={character} index={index} />
-        )
-      })}
+      {data?.characters.results.map((character, index) => (
+        <Card key={`character-${index}`} character={character} index={index} />
+      ))}
     </section>
   )
 })
