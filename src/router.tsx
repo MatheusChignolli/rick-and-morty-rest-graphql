@@ -11,7 +11,7 @@ export default createBrowserRouter([
   },
   {
     path: '/graphql',
-    element: <Layout>{({ name }) => <Graphql name={name} />}</Layout>,
+    element: <Layout>{(props) => <Graphql {...props} />}</Layout>,
   },
   {
     path: '/rest',

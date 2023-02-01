@@ -2,6 +2,7 @@ import { memo, useEffect } from 'react'
 import { useQuery } from '@apollo/client'
 import Ellipsis from '../../components/Ellipsis'
 import { GET_CHARACTERS } from '../../services/graphql/queries'
+import { PageInterface } from '../../types'
 
 interface getCharactersInterface {
   characters: {
@@ -9,12 +10,12 @@ interface getCharactersInterface {
   }
 }
 
-export default memo(({ name }: { name?: string }) => {
+export default memo(({ name, status, gender }: PageInterface) => {
   const { data, loading, refetch } = useQuery<getCharactersInterface>(GET_CHARACTERS)
 
   useEffect(() => {
-    refetch({ name })
-  }, [name])
+    refetch({ name, status, gender })
+  }, [name, status, gender])
 
   if (loading) {
     return <div>Loading</div>

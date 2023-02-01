@@ -15,13 +15,13 @@ export default () => {
       ))}
       <div className="flex justify-between mt-4">
         <Link
-          className="bg-zinc-400 rounded p-2 text-zinc-800 min-w-20 text-center transition-all duration-300 hover:bg-graphql hover:text-zinc-50"
+          className="bg-zinc-400 rounded p-2 text-gray-800 min-w-20 text-center transition-all duration-300 hover:bg-graphql hover:text-zinc-50"
           to="/graphql"
         >
           GraphQl
         </Link>
         <Link
-          className="bg-zinc-400 rounded p-2 text-zinc-800 min-w-20 text-center transition-all duration-300 hover:bg-rest hover:text-zinc-50"
+          className="bg-zinc-400 rounded p-2 text-gray-800 min-w-20 text-center transition-all duration-300 hover:bg-rest hover:text-zinc-50"
           to="/rest"
         >
           REST

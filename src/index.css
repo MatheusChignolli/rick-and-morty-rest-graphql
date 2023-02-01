@@ -17,7 +17,11 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-height: 100vh;
+  min-height: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
 }
 
 #root {
@@ -25,13 +29,17 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 24px;
 }
 
 button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+button:focus-visible,
+input:focus,
+input:focus-visible,
+select:focus,
+select:focus-visible {
+  outline: 0px auto -webkit-focus-ring-color;
 }
 
 /* @media (prefers-color-scheme: light) {
