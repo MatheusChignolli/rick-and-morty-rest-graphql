@@ -13,7 +13,7 @@ export default ({ character, index }: { character: any; index: number }) => (
       <ul className="w-full">
         <li>
           <div className="flex flex-col">
-            <label className="text-sm font-bold">Name</label>
+            <label className="text-gray-700 text-sm font-bold">Name</label>
             <div className="text-md font-normal text-ellipsis">
               <Ellipsis>{character.name}</Ellipsis>
             </div>
@@ -21,7 +21,7 @@ export default ({ character, index }: { character: any; index: number }) => (
         </li>
         <li className="mt-1">
           <div className="flex flex-col">
-            <label className="text-sm font-bold">Specie</label>
+            <label className="text-gray-700 text-sm font-bold">Specie</label>
             <div className="text-md font-normal text-ellipsis">
               <Ellipsis>{`${character.species} (${character.gender})`}</Ellipsis>
             </div>
@@ -29,7 +29,7 @@ export default ({ character, index }: { character: any; index: number }) => (
         </li>
         <li className="mt-1">
           <div className="flex flex-col">
-            <label className="text-sm font-bold">Status</label>
+            <label className="text-gray-700 text-sm font-bold">Status</label>
             <div className="text-md font-normal text-ellipsis">
               <Ellipsis>{character.status}</Ellipsis>
             </div>
@@ -40,7 +40,7 @@ export default ({ character, index }: { character: any; index: number }) => (
     <ul>
       <li>
         <div className="flex flex-col">
-          <label className="text-sm font-bold">Origin</label>
+          <label className="text-gray-700 text-sm font-bold">Origin</label>
           <div className="text-md font-normal text-ellipsis">
             <Ellipsis>{`${character.origin.name}${
               !!character.origin.dimension ? ` - ${character.origin.dimension}` : ''
@@ -52,7 +52,7 @@ export default ({ character, index }: { character: any; index: number }) => (
       </li>
       <li className="mt-1">
         <div className="flex flex-col">
-          <label className="text-sm font-bold">Location</label>
+          <label className="text-gray-700 text-sm font-bold">Location</label>
           <div className="text-md font-normal text-ellipsis">
             <Ellipsis>{character.location.name}</Ellipsis>
           </div>

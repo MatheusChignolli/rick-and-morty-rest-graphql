@@ -15,6 +15,6 @@ export default createBrowserRouter([
   },
   {
     path: '/rest',
-    element: <Rest />,
+    element: <Layout>{(props) => <Rest {...props} />}</Layout>,
   },
 ])
