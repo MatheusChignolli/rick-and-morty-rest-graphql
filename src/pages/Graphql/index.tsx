@@ -22,7 +22,7 @@ export default memo((filter: PageInterface) => {
   if (error) return <div>Error</div>
 
   return (
-    <section className="h-full w-full grid grid-cols-4 gap-10">
+    <section className="h-full w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
       {data?.characters.results.map((character, index) => (
         <Card key={`character-${index}`} character={character} index={index} />
       ))}
